@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timer{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+}
+
+#startBtn{
+    background: #28a745;
+}
+
+#pauseBtn{
+    background: #ffc107;
+    color: black;
+}
+
+#resetBtn{
+    background: #dc3545;
+}
+
+#lapBtn{
+    background: #007bff;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.laps{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.laps h2{
+    margin-bottom: 10px;
+}
+
+#lapList{
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#lapList li{
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    list-style: none;
+}
